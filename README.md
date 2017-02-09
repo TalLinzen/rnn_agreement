@@ -6,7 +6,7 @@ dependencies](https://transacl.org/ojs/index.php/tacl/article/view/972).
 If you're just looking for the subject-verb dependency data in a simple format
 and are not planning to run the code in this repository,
 download our [simple dependency
-dataset](http://tallinzen.net/media/rnn_agreement/simple_agreement_deps.tar.gz).
+dataset](http://tallinzen.net/media/rnn_agreement/rnn_agr_simple.tar.gz).
 
 ## Quick start
 
@@ -29,7 +29,7 @@ pvn = PredictVerbNumber(filenames.deps, prop_train=0.1)
 pvn.pipeline()
 ```
 
-After running this code, `pvn.test\_results` will be a pandas data frame
+After running this code, `pvn.test_results` will be a pandas data frame
 with all of the relevant results.
 
 The file `experiments.py` contains the code used to run the experiments
