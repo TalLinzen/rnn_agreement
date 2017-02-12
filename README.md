@@ -22,7 +22,6 @@ into the `data` subdirectory and unzip the file.
 
 ```python
 from rnnagr.agreement_acceptor import PredictVerbNumber
-from rnnagr.experiments import multiple_runs
 from rnnagr import filenames
 
 pvn = PredictVerbNumber(filenames.deps, prop_train=0.1)
@@ -33,7 +32,7 @@ After running this code, `pvn.test_results` will be a pandas data frame
 with all of the relevant results.
 
 The file `experiments.py` contains the code used to run the experiments
-reported in the paper; see that file for examples of task and training
+reported in the paper; see that file for examples of tasks and training
 regimes other than `PredictVerbNumber`.
 
 ## More
@@ -45,6 +44,7 @@ corpus](http://tallinzen.net/media/rnn_agreement/wikipedia.parsed.subset.50.gz) 
 ```python
 from rnnagr.collect_agreement import CollectAgreement
 from rnnagr.utils import deps_to_csv
+import filenames
 ca = CollectAgreement(filenames.parsed_wiki_subset_50, modes=('infreq_pos',),
 skip=0, most_common=10000)
 ca.collect_agreement()
