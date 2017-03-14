@@ -2,6 +2,15 @@
 
 Code for the paper [Assessing the ability of LSTMs to learn syntax-sensitive
 dependencies](https://transacl.org/ojs/index.php/tacl/article/view/972).
+Dependencies:
+
+* numpy
+* keras
+* theano (though the TensorFlow backend is likely to also work)
+* pandas
+
+For the Google LM evaluation, you would need to install TensorFlow and download
+[the trained model](https://github.com/tensorflow/models/tree/master/lm_1b).
 
 If you're just looking for the subject-verb dependency data in a simple format
 and are not planning to run the code in this repository,
