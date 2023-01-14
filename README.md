@@ -26,7 +26,7 @@ general the easiest thing to do is to set the environment variable
 `RNN_AGREEMENT_ROOT` to wherever you cloned this repository.
 
 After cloning the repository, download the [dependency
-dataset](http://tallinzen.net/media/rnn_agreement/agr_50_mostcommon_10K.tsv.gz)
+dataset](https://www.dropbox.com/s/oiplw5pk5zppta9/agr_50_mostcommon_10K.tsv)
 into the `data` subdirectory and unzip the file.
 
 ```python
