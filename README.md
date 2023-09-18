@@ -52,9 +52,9 @@ corpus](http://tallinzen.net/media/rnn_agreement/wikipedia.parsed.subset.50.gz) 
 
 ```python
 from rnnagr.collect_agreement import CollectAgreement
-from rnnagr.utils import deps_to_csv
-import filenames
-ca = CollectAgreement(filenames.parsed_wiki_subset_50, modes=('infreq_pos',),
+from rnnagr.utils import deps_to_tsv
+from rnnagr import filenames
+ca = CollectAgreement(filenames.parsed_wiki_subset, modes=('infreq_pos',),
 skip=0, most_common=10000)
 ca.collect_agreement()
 deps_to_tsv(ca.deps, 'agr_mostcommon_10K.tsv')
